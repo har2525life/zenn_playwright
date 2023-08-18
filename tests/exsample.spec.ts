@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test.describe("Login 成功", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("http://localhost:3000");
-    await page.getByTestId("email").fill("sample10@gmail.com");
+    await page.getByTestId("email").fill("sample11@gmail.com");
     await page.getByTestId("password").fill("testsample");
 
     await page.getByTestId("signIn").click();
